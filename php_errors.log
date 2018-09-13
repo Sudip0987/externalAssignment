@@ -1,0 +1,115 @@
+[06-Sep-2018 01:36:28 UTC] PHP Warning:  require_once(/Account.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:36:28 UTC] PHP Stack trace:
+[06-Sep-2018 01:36:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:36:28 UTC] PHP Fatal error:  require_once(): Failed opening required '/Account.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:36:28 UTC] PHP Stack trace:
+[06-Sep-2018 01:36:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:39:12 UTC] PHP Warning:  require_once(account.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:39:12 UTC] PHP Stack trace:
+[06-Sep-2018 01:39:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:39:12 UTC] PHP Fatal error:  require_once(): Failed opening required 'account.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:39:12 UTC] PHP Stack trace:
+[06-Sep-2018 01:39:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:40:03 UTC] PHP Warning:  require_once(/account.class.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:40:03 UTC] PHP Stack trace:
+[06-Sep-2018 01:40:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:40:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/account.class.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:40:03 UTC] PHP Stack trace:
+[06-Sep-2018 01:40:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:40:47 UTC] PHP Warning:  require(/account.class.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:40:47 UTC] PHP Stack trace:
+[06-Sep-2018 01:40:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:40:47 UTC] PHP Fatal error:  require(): Failed opening required '/account.class.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:40:47 UTC] PHP Stack trace:
+[06-Sep-2018 01:40:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:43:26 UTC] PHP Fatal error:  Class 'Account' not found in /home/ubuntu/workspace/classes/login.php on line 13
+[06-Sep-2018 01:43:26 UTC] PHP Stack trace:
+[06-Sep-2018 01:43:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:48:11 UTC] PHP Warning:  include(/../autoloader.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:48:11 UTC] PHP Stack trace:
+[06-Sep-2018 01:48:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:48:11 UTC] PHP Warning:  include(): Failed opening '/../autoloader.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.php on line 3
+[06-Sep-2018 01:48:11 UTC] PHP Stack trace:
+[06-Sep-2018 01:48:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 01:48:11 UTC] PHP Fatal error:  Class 'Account' not found in /home/ubuntu/workspace/classes/login.php on line 13
+[06-Sep-2018 01:48:11 UTC] PHP Stack trace:
+[06-Sep-2018 01:48:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.php:0
+[06-Sep-2018 06:01:19 UTC] PHP Warning:  include(/../autoloader.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/login.class.php on line 3
+[06-Sep-2018 06:01:20 UTC] PHP Stack trace:
+[06-Sep-2018 06:01:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:01:20 UTC] PHP Warning:  include(): Failed opening '/../autoloader.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/login.class.php on line 3
+[06-Sep-2018 06:01:20 UTC] PHP Stack trace:
+[06-Sep-2018 06:01:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:01:20 UTC] PHP Fatal error:  Class 'Account' not found in /home/ubuntu/workspace/classes/login.class.php on line 13
+[06-Sep-2018 06:01:20 UTC] PHP Stack trace:
+[06-Sep-2018 06:01:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:03:22 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/classes/database.class.php on line 10
+[06-Sep-2018 06:03:22 UTC] PHP Stack trace:
+[06-Sep-2018 06:03:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:03:22 UTC] PHP   2. Account->__construct() /home/ubuntu/workspace/classes/login.class.php:13
+[06-Sep-2018 06:03:22 UTC] PHP   3. Database->__construct() /home/ubuntu/workspace/classes/account.class.php:5
+[06-Sep-2018 06:03:22 UTC] PHP   4. mysqli_connect() /home/ubuntu/workspace/classes/database.class.php:10
+[06-Sep-2018 06:03:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 51
+[06-Sep-2018 06:03:22 UTC] PHP Stack trace:
+[06-Sep-2018 06:03:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:03:22 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[06-Sep-2018 06:10:41 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 52
+[06-Sep-2018 06:10:41 UTC] PHP Stack trace:
+[06-Sep-2018 06:10:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:10:41 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[06-Sep-2018 06:11:56 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 52
+[06-Sep-2018 06:11:56 UTC] PHP Stack trace:
+[06-Sep-2018 06:11:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:11:56 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[06-Sep-2018 06:12:24 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/ubuntu/workspace/classes/account.class.php on line 54
+[06-Sep-2018 06:12:24 UTC] PHP Stack trace:
+[06-Sep-2018 06:12:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:12:24 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[06-Sep-2018 06:12:24 UTC] PHP   3. mysqli_stmt->bind_result() /home/ubuntu/workspace/classes/account.class.php:54
+[06-Sep-2018 06:31:12 UTC] PHP Warning:  include(autoloader.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/classes/signup.class.php on line 3
+[06-Sep-2018 06:31:12 UTC] PHP Stack trace:
+[06-Sep-2018 06:31:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 06:31:12 UTC] PHP Warning:  include(): Failed opening 'autoloader.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/classes/signup.class.php on line 3
+[06-Sep-2018 06:31:12 UTC] PHP Stack trace:
+[06-Sep-2018 06:31:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 06:31:12 UTC] PHP Fatal error:  Class 'Account' not found in /home/ubuntu/workspace/classes/signup.class.php on line 9
+[06-Sep-2018 06:31:12 UTC] PHP Stack trace:
+[06-Sep-2018 06:31:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 06:33:54 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/ubuntu/workspace/classes/database.class.php on line 10
+[06-Sep-2018 06:33:54 UTC] PHP Stack trace:
+[06-Sep-2018 06:33:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 06:33:54 UTC] PHP   2. Account->__construct() /home/ubuntu/workspace/classes/signup.class.php:9
+[06-Sep-2018 06:33:54 UTC] PHP   3. Database->__construct() /home/ubuntu/workspace/classes/account.class.php:5
+[06-Sep-2018 06:33:54 UTC] PHP   4. mysqli_connect() /home/ubuntu/workspace/classes/database.class.php:10
+[06-Sep-2018 06:44:37 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/ubuntu/workspace/classes/signup.class.php on line 31
+[06-Sep-2018 06:45:44 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/ubuntu/workspace/classes/signup.class.php on line 31
+[06-Sep-2018 06:47:38 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/ubuntu/workspace/classes/signup.class.php on line 31
+[06-Sep-2018 06:49:30 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/ubuntu/workspace/classes/signup.class.php on line 31
+[06-Sep-2018 06:50:22 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/ubuntu/workspace/classes/database.class.php on line 15
+[06-Sep-2018 06:50:22 UTC] PHP Stack trace:
+[06-Sep-2018 06:50:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[06-Sep-2018 06:50:22 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:13
+[06-Sep-2018 06:50:22 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:13
+[06-Sep-2018 06:50:22 UTC] PHP   4. include() /home/ubuntu/workspace/autoloader.php:9
+[06-Sep-2018 06:50:22 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 06:50:22 UTC] PHP   6. loadClass() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 06:50:22 UTC] PHP   7. include() /home/ubuntu/workspace/autoloader.php:9
+[06-Sep-2018 07:01:11 UTC] PHP Parse error:  syntax error, unexpected 'header' (T_STRING) in /home/ubuntu/workspace/classes/signup.class.php on line 31
+[06-Sep-2018 07:02:30 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/ubuntu/workspace/classes/database.class.php on line 15
+[06-Sep-2018 07:02:30 UTC] PHP Stack trace:
+[06-Sep-2018 07:02:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 07:02:30 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/signup.class.php:9
+[06-Sep-2018 07:02:30 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/signup.class.php:9
+[06-Sep-2018 07:02:30 UTC] PHP   4. include() /home/ubuntu/workspace/autoloader.php:9
+[06-Sep-2018 07:02:30 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 07:02:30 UTC] PHP   6. loadClass() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 07:02:30 UTC] PHP   7. include() /home/ubuntu/workspace/autoloader.php:9
+[06-Sep-2018 07:05:07 UTC] PHP Fatal error:  Cannot redeclare class Database in /home/ubuntu/workspace/classes/database.class.php on line 15
+[06-Sep-2018 07:05:07 UTC] PHP Stack trace:
+[06-Sep-2018 07:05:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[06-Sep-2018 07:05:07 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/signup.class.php:9
+[06-Sep-2018 07:05:07 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/signup.class.php:9
+[06-Sep-2018 07:05:07 UTC] PHP   4. include() /home/ubuntu/workspace/autoloader.php:9
+[06-Sep-2018 07:05:07 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 07:05:07 UTC] PHP   6. loadClass() /home/ubuntu/workspace/autoloader.php:2
+[06-Sep-2018 07:05:07 UTC] PHP   7. include() /home/ubuntu/workspace/autoloader.php:9
