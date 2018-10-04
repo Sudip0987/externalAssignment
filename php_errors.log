@@ -113,3 +113,165 @@
 [06-Sep-2018 07:05:07 UTC] PHP   5. spl_autoload_call() /home/ubuntu/workspace/autoloader.php:2
 [06-Sep-2018 07:05:07 UTC] PHP   6. loadClass() /home/ubuntu/workspace/autoloader.php:2
 [06-Sep-2018 07:05:07 UTC] PHP   7. include() /home/ubuntu/workspace/autoloader.php:9
+[20-Sep-2018 05:41:00 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/ubuntu/workspace/classes/account.class.php on line 10
+[20-Sep-2018 05:41:00 UTC] PHP Stack trace:
+[20-Sep-2018 05:41:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/signup.class.php:0
+[20-Sep-2018 05:41:00 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/signup.class.php:9
+[20-Sep-2018 05:41:00 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/signup.class.php:9
+[27-Sep-2018 05:29:21 UTC] PHP Fatal error:  Call to a member function addProduct() on a non-object in /home/ubuntu/workspace/classes/publishAd.class.php on line 22
+[27-Sep-2018 05:29:21 UTC] PHP Stack trace:
+[27-Sep-2018 05:29:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:31:09 UTC] PHP Fatal error:  Call to a member function addProduct() on a non-object in /home/ubuntu/workspace/classes/publishAd.class.php on line 22
+[27-Sep-2018 05:31:09 UTC] PHP Stack trace:
+[27-Sep-2018 05:31:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:33:53 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:33:53 UTC] PHP Stack trace:
+[27-Sep-2018 05:33:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:33:53 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:35:03 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:35:03 UTC] PHP Stack trace:
+[27-Sep-2018 05:35:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:35:03 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:39:12 UTC] PHP Fatal error:  Cannot pass parameter 8 by reference in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:39:12 UTC] PHP Stack trace:
+[27-Sep-2018 05:39:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:39:12 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:39:24 UTC] PHP Fatal error:  Cannot pass parameter 8 by reference in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:39:24 UTC] PHP Stack trace:
+[27-Sep-2018 05:39:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:39:24 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:40:16 UTC] PHP Fatal error:  Cannot pass parameter 8 by reference in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:40:16 UTC] PHP Stack trace:
+[27-Sep-2018 05:40:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:40:16 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:42:21 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:42:21 UTC] PHP Stack trace:
+[27-Sep-2018 05:42:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:42:21 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 05:43:20 UTC] PHP Fatal error:  Cannot pass parameter 2 by reference in /home/ubuntu/workspace/classes/products.class.php on line 32
+[27-Sep-2018 05:43:20 UTC] PHP Stack trace:
+[27-Sep-2018 05:43:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 05:43:20 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:22
+[27-Sep-2018 06:19:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/classes/publishAd.class.php on line 18
+[27-Sep-2018 06:23:11 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/classes/products.class.php on line 28
+[27-Sep-2018 06:23:11 UTC] PHP Stack trace:
+[27-Sep-2018 06:23:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 06:23:11 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:30
+[27-Sep-2018 06:23:11 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/classes/products.class.php:28
+[27-Sep-2018 06:26:49 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 28
+[27-Sep-2018 06:26:49 UTC] PHP Stack trace:
+[27-Sep-2018 06:26:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 06:26:49 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:23
+[27-Sep-2018 06:30:00 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 28
+[27-Sep-2018 06:30:00 UTC] PHP Stack trace:
+[27-Sep-2018 06:30:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[27-Sep-2018 06:30:00 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:23
+[27-Sep-2018 06:36:56 UTC] PHP Parse error:  syntax error, unexpected '$delivery' (T_VARIABLE) in /home/ubuntu/workspace/classes/publishAd.class.php on line 24
+[27-Sep-2018 06:42:46 UTC] PHP Parse error:  syntax error, unexpected '$product' (T_VARIABLE) in /home/ubuntu/workspace/classes/publishAd.class.php on line 28
+[27-Sep-2018 06:43:19 UTC] PHP Parse error:  syntax error, unexpected '$product' (T_VARIABLE) in /home/ubuntu/workspace/classes/publishAd.class.php on line 28
+[27-Sep-2018 06:43:33 UTC] PHP Parse error:  syntax error, unexpected '$product' (T_VARIABLE) in /home/ubuntu/workspace/classes/publishAd.class.php on line 28
+[27-Sep-2018 06:44:41 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/classes/publishAd.class.php on line 33
+[27-Sep-2018 06:45:36 UTC] PHP Parse error:  syntax error, unexpected '"' in /home/ubuntu/workspace/classes/publishAd.class.php on line 39
+[27-Sep-2018 07:00:58 UTC] PHP Parse error:  syntax error, unexpected '$imagePath' (T_VARIABLE) in /home/ubuntu/workspace/classes/publishAd.class.php on line 15
+[04-Oct-2018 05:06:37 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:06:37 UTC] PHP Stack trace:
+[04-Oct-2018 05:06:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:06:37 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:15
+[04-Oct-2018 05:07:37 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:07:37 UTC] PHP Stack trace:
+[04-Oct-2018 05:07:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:07:37 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:15
+[04-Oct-2018 05:10:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:10:21 UTC] PHP Stack trace:
+[04-Oct-2018 05:10:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:10:21 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:15
+[04-Oct-2018 05:12:01 UTC] PHP Parse error:  syntax error, unexpected '$account' (T_VARIABLE) in /home/ubuntu/workspace/classes/login.class.php on line 5
+[04-Oct-2018 05:12:22 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:12:22 UTC] PHP Stack trace:
+[04-Oct-2018 05:12:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:12:22 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:12:40 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:12:40 UTC] PHP Stack trace:
+[04-Oct-2018 05:12:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:12:40 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:13:42 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:13:42 UTC] PHP Stack trace:
+[04-Oct-2018 05:13:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:13:42 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:14:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:14:21 UTC] PHP Stack trace:
+[04-Oct-2018 05:14:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:14:21 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:15:07 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:15:07 UTC] PHP Stack trace:
+[04-Oct-2018 05:15:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:15:07 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:16:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 34
+[04-Oct-2018 05:16:02 UTC] PHP Stack trace:
+[04-Oct-2018 05:16:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:16:02 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:16:44 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:16:44 UTC] PHP Stack trace:
+[04-Oct-2018 05:16:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:16:44 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:23:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:23:35 UTC] PHP Stack trace:
+[04-Oct-2018 05:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:23:35 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:23:35 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:24:52 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:24:52 UTC] PHP Stack trace:
+[04-Oct-2018 05:24:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:24:52 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:24:52 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/classes/account.class.php:35
+[04-Oct-2018 05:25:29 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:25:29 UTC] PHP Stack trace:
+[04-Oct-2018 05:25:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:25:29 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:26:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:26:02 UTC] PHP Stack trace:
+[04-Oct-2018 05:26:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:26:02 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:26:08 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:26:08 UTC] PHP Stack trace:
+[04-Oct-2018 05:26:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:26:08 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:27:48 UTC] PHP Warning:  mysqli_stmt::bind_result(): Number of bind variables doesn't match number of fields in prepared statement in /home/ubuntu/workspace/classes/account.class.php on line 37
+[04-Oct-2018 05:27:48 UTC] PHP Stack trace:
+[04-Oct-2018 05:27:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:27:48 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:27:48 UTC] PHP   3. mysqli_stmt->bind_result() /home/ubuntu/workspace/classes/account.class.php:37
+[04-Oct-2018 05:35:12 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:35:12 UTC] PHP Stack trace:
+[04-Oct-2018 05:35:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:35:12 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:35:37 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/account.class.php on line 35
+[04-Oct-2018 05:35:37 UTC] PHP Stack trace:
+[04-Oct-2018 05:35:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:35:37 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:38:14 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/classes/account.class.php on line 38
+[04-Oct-2018 05:38:14 UTC] PHP Stack trace:
+[04-Oct-2018 05:38:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:38:14 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:38:45 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/classes/account.class.php on line 38
+[04-Oct-2018 05:38:45 UTC] PHP Stack trace:
+[04-Oct-2018 05:38:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:38:45 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 05:39:32 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/classes/account.class.php on line 39
+[04-Oct-2018 05:39:32 UTC] PHP Stack trace:
+[04-Oct-2018 05:39:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:39:32 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:39:32 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:39:40 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ',' or ';' in /home/ubuntu/workspace/classes/account.class.php on line 39
+[04-Oct-2018 05:39:40 UTC] PHP Stack trace:
+[04-Oct-2018 05:39:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:39:40 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:39:40 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:13
+[04-Oct-2018 05:39:51 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/classes/account.class.php on line 38
+[04-Oct-2018 05:39:52 UTC] PHP Stack trace:
+[04-Oct-2018 05:39:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 05:39:52 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[04-Oct-2018 06:25:05 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/classes/account.class.php on line 42
+[04-Oct-2018 06:25:05 UTC] PHP Stack trace:
+[04-Oct-2018 06:25:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[04-Oct-2018 06:25:05 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14

@@ -14,44 +14,12 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SELL MY GAME
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)
-                </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Browse
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Put an ad
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<?php
+
+   include("./includes/header.php");
+   ?>
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" style = " margin-top:30px;">
         <div class = "row"style = "margin:0px;background-color:#4db6ac;" >
         <!--TODO put logo or some kind of title here -->
         <h1 class="my-4">   &nbsp  SellMyGame
@@ -59,18 +27,35 @@
       </div>
       <form id = "searchForm" method = "POST" action  ="#">
         <div class = "row" style = "margin:0px;padding-bottom:30px;background-color:#4db6ac;">
-          <div class = "col-md-6 col-sm6">
+          <div class = "col-md-5 col-sm6">
             <input type = "text" name = "textGameName" placeHolder="Game name" class = "form-control"> 
           </div>
-          <div class = "col-md-2 col-sm6">
-            <input type = "text" name = "textGameName" placeHolder="Category" class = "form-control"> 
+          <div class="form-group">
+            
+                        <label class="form-contol" > Game Category: </label>
+                        
+                        <select name = "selectorGcat" id = "selectorGcat" class = "form-contol control-label">
+                          <option value="Strategy">Strategy</option>
+                          <option value="Adventure">Adventure</option>
+                          <option value="Racing">Racing</option>
+                          <option value="Multiplayer">Multiplayer</option>
+                          <option value="Other">Other</option>
+                        </select>                   
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-contol" > Console Type: </label>
+                        <select name = "selectorCcat" id="selectorCcat" class = "form-contol">
+                          <option value="Xboxone">Xbox one</option>
+                          <option value="Xbox360">Xbox 360</option>
+                          <option value="PS4">PS4</option>
+                          <option value="PS3">PS3</option>
+                           <option value="PS3">Other</option>
+
+                          
+                        </select>                   
           </div>
-          <div class = "col-md-2 col-sm6">
-            <input type = "text" name = "textGameName" placeHolder="Console type"class = "form-control"> 
-          </div>
-          <div class = "col-md-2 col-sm6">
-            <button name = "searchButton" class = "form-control btn btn-primary">Search
-            </button>
+          <div class = "col-md-2 col-sm6"> <button name = "searchButton" class = "form-control btn btn-primary">Search </button> 
           </div>
         </div>
       </form>
@@ -79,22 +64,22 @@
       <p>
       <div class="row" style = " margin-top:10px;padding-bottom:30px; border-size:2px;">
         <?php
-session_start();
 include('autoloader.php');
 $prods = new Products();
 $products = $prods -> getProducts();
 foreach( $products as $item ){
 $product_name = $item['name'];
+$product_Id = $item['id'];
 $product_price = $item['price'];
 $seller_name = $item['userName'];
-$image_path = $item['imageFilePath'];
+$image_path = $item['imagePath'];
 $product_description =TextUtility::summarize($item['description'],15);
 echo " <div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>
 <div class='card h-100'>
 <a href='#'><img class='card-img-top' src='$image_path' alt=''></a>
 <div class='card-body'>
 <h4 class='card-title'>
-<a href='#'>$product_name</a>
+<a href='productDetails.php?product_id=$product_Id'>$product_name</a>
 </h4>
 <b>
 <p>Price: $$product_price</p>
@@ -142,17 +127,8 @@ echo " <div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>
     </div>
     <!-- /.container -->
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018
-        </p>
-      </div>
-      <!-- /.container -->
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js">
-    </script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
-    </script>
+   <?php
+   include("./includes/footer.php");
+   ?>
   </body>
 </html>

@@ -11,15 +11,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     $password = $_POST['textPassword'];
     
     $account = new Account();
-    echo $userPassword;
     $success = $account -> authenticate($email, $password);
     if($success == true){
         //login successful
-         echo "Dsad";
-        session_start();
         $_SESSION['userEmail'] = $email;
         //redirect user to home page
-        header("location:../index.php");
+        header("location:../publishAd.php");
        
     }
     else{
@@ -31,3 +28,4 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
         
     }
 }
+?>

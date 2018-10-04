@@ -1,6 +1,4 @@
 
-<!doctype html>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,39 +20,12 @@
   </head>
 
   <body>
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SELL MY GAME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Browse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Put an ad</a>
-            </li>
-            <li class="nav-item">
-       <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-              
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-   
+    <?php
+    session_start();
+   include("./includes/header.php");
+
+   ?>
     <!-- Page Content -->
     <div class="container" style = " margin-top:30px;">
       
@@ -86,75 +57,84 @@
             
                     </div>
                     <div class="button">
-                    <button type="submit" class="btn btn-primary">Login</button>
-                    </div>
-                      <php
-                      if (isset($_GET["msg"]) && $_GET["msg"] == 'failed'){
-                      header("location:index.php");
-                      }
-                      ?>
+                    <button type="submit" class="btn btn-primary" name="button">Login</button>
+                    <divclass='form-group'>
+                    <div class="form-group">
+                      <?php
+                      /*if (isset($_GET["msg1"]) && $_GET["msg1"] == 'failed') {
+                        echo'<p>username or password incorrect</p>';
+                      }*/
+                      if( $message ){
+                echo "<div class=\"alert alert-$message_class alert-dismissable fade show\">
+                    $message
+                    <button class=\"close\" type=\"button\" data-dismiss=\"alert\">
+                        &times;
+                    </button>
+                </div>";
+            }
+            ?>
+                      
+                      
+                    </div>   
                 </form>
-          
-
         </div>
-          <div class = "col-lg-1"></div>
+       </div>
+          <div class = "col-sm-1" >
+            
+          </div>
+        
           
-         <div class="col-lg-7 col-md col-sm-6 portfolio-item"style=" border:1px solid none;border-radius:5px;background-color:#4db6ac;padding-bottom:10px;">
+          <div class="col-lg-7 col-md col-sm-5 portfolio-item"style=" border:1px solid none;border-radius:5px;background-color:#4db6ac;padding-bottom:10px;">
           
                 <div class="panel">
                    <h1 class="my-4">Register
-        
                    </h1>
-                  
                </div>
                 <form id="register" method = "POST" action="/classes/signup.class.php">
             
                     <div class="form-group">
             
             
-                        <input type="text" name= "regEmail" class="form-control" id="userName" placeholder="Full Name">
+                        <input type="text" name= "textName" class="form-control" id="userName" placeholder="Full Name">
             
                     </div>
                      <div class="form-group">
             
             
-                        <input type="email" name= "regEmail" class="form-control" id="userEmail" placeholder="Email Address">
+                        <input type="email" name= "textEmail" class="form-control" id="userEmail" placeholder="Email Address">
             
                     </div>
             
                     <div class="form-group">
             
-                        <input type="password"  name= "regPassword" class="form-control" id="userPassword" placeholder="Password">
+                        <input type="password"  name= "textPassword" class="form-control" id="userPassword" placeholder="Password">
             
                     </div>
             
                     <div class="form-group">
             
-                        <input type="text"  name= "regAddress" class="form-control" id="userAddress" placeholder="Address">
-            
+                        <input type="text"  name= "textAddress" class="form-control" id="userAddress" placeholder="Address">
                     </div>
                     <div class="form-group">
             
-                        <input type="text"  name= "regContact" class="form-control" id="userContact" placeholder="Contact">
-            
+                        <input type="text"  name= "textContact" class="form-control" id="userContact" placeholder="Contact">
                     </div>
-                  
                     <button type="submit" class="btn btn-primary">Register</button>
-                    
-            
-                </form>
-            
-
+                
+                <div class="form-group">
+                       <?php
+                      if (isset($_GET["msg2"]) && $_GET["msg2"] == 'failed') {
+                        echo'<p>Registration unsuccessfull</p>';
+                      }elseif (isset($_GET["msg2"]) && $_GET["msg2"]=='successfull'){
+                        echo '<p> Registration successful </p>';
+                      }
+                      
+                      ?>
+                    </div>  
+                    </form>
         </div>
-        
-        
-        
-        
-        
-        
-          
         </div>
-    </div>
+   
    
     <!-- /.container -->
 
@@ -165,11 +145,9 @@
       </div>
       <!-- /.container -->
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>

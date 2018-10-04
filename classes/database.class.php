@@ -10,5 +10,8 @@ class Database {
         $this -> connection = mysqli_connect($this->dbhost,$this -> username,$this -> password,$this -> dbname);
     }
     
+    public function getConnection(){
+        return $this -> connection;
+    }
 }
 ?>
