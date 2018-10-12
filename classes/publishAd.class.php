@@ -16,13 +16,15 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     move_uploaded_file($_FILES['fileToUpload']['tmp_name'],$imagePath);
       
   $name = $_POST['textGname'];
+  $name = strtolower($name);
      $price = $_POST['textGprice'];
      $desc = $_POST['textGdesc'];
      
     $delivery = $_POST['textGdelivery'];
     $category = $_POST['selectorGcat'];
+    $category = strtolower($category);
     $console = $_POST['selectorCcat'];
-  
+    $console = strtolower($console);
     $product = new Products();
     //add products
  $addProduct = $product -> addProduct($name,$price,$desc,$delivery, $console,$category,$imagePath);

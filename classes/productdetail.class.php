@@ -5,11 +5,12 @@ class ProductDetail extends Products{
         parent::__construct();
     }
     public function getProduct( $id ){
+        
              $query = "SELECT * 
-FROM products p, userTable u, images i, productImage pi
+FROM products p, userTable u
 WHERE u.userId = p.sellerID
-AND p.id = pi.productID
-AND pi.imageID = i.imageID and p.id=?;";
+AND
+ p.id=? order by p.id;";
         $statement = $this -> connection -> prepare($query);
         $statement -> bind_param('i',$id);
         $statement -> execute();

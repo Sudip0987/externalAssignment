@@ -3,6 +3,9 @@
   <head>
     <?php
 
+if($_GET['message']==1){
+    echo "<script>alert('Item has been added to cart!');</script>";
+}
    include("./includes/header.php");
    ?>
     <meta charset="utf-8">
@@ -19,6 +22,7 @@
   <body>
    
               <?php
+              session_start();
 include('autoloader.php');
 $id = $_GET['product_id'];
 $detail = new ProductDetail();
@@ -62,8 +66,11 @@ echo "
 
 </div>
            <div class='col-lg-5 col-md-4 col-sm-6 portfolio-item' style='margin-top:5px;'>
- <button name = 'searchButton' class = 'form-control btn btn-primary'>Add To Cart 
+           <form method='post' action='addToCart.php?id=$id'>
+ <button name = 'searchButton' id = 'searchButton'  class = 'form-control btn btn-primary'>Add To Cart 
 </button> 
+</form>
+
 </div>
     </div>
     </div>
@@ -73,6 +80,8 @@ echo "
 </div>
 </div>";
 }
+
+
 ?>
  
       <!-- /.row -->

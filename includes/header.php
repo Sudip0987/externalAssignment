@@ -1,7 +1,19 @@
 <?php
+
+session_start();
+
+if($_SESSION['userEmail']==null){
+    
+$loginlogout="<a class='nav-link' href='/login.php'>Log in";
+}else {
+$loginlogout= "<a class='nav-link' href='/destroySession.php'>Log out";
+}
+$cartCount=count($_SESSION['productID']);
+
+
 echo "    <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
       <div class='container'>
-        <a class='navbar-brand' href='#'>SELL MY GAME
+        <a class='navbar-brand' href='index.php'>SELL MY GAME
         </a>
         <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation'>
           <span class='navbar-toggler-icon'>
@@ -15,24 +27,27 @@ echo "    <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
                 </span>
               </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='#' class= 'dropdown-toggle' data-toggle='dropdown'>Browse
+            <li class='nav-item dropdown navbar-nav ml-auto' >
+              <a class='nav-link dropdown-toggle' href='index.php' data-toggle='dropdown'>Browse
               </a>
-                <ul class= 'dropdown-menu'>
-                  <li><a href='#' >By Game Type</a></li>
+                <ul class= 'dropdown-menu '>
+                  <li class='drop'><h5>By Game Type</h5></li>
                     <ul>
-                      <li><a href='index.php?game=all>All</a></li>
-                      <li><a href='index.php?game=strategy'>Strategy</a></li>
-                      <li><a href='index.php?game=sports'>Sports</a></li>
-                      <li><a href='index.php?game=adventure'>Adventure</a></li>
-                      <li><a href='index.php?game=racing'>Racing</a></li>
-                      <li><a href='index.php?game=multiplayer'>Multiplayer</a></li>
+                      <li><a href='index.php?game=all' class='dropdown-item'>All</a></li>
+                      <li><a href='index.php?game=strategy' class='dropdown-item'>Strategy</a></li>
+                      <li><a href='index.php?game=sports' class='dropdown-item'>Sports</a></li>
+                      <li><a href='index.php?game=adventure' class='dropdown-item'>Adventure</a></li>
+                      <li><a href='index.php?game=racing' class='dropdown-item'>Racing</a></li>
+                      <li><a href='index.php?game=multiplayer' class='dropdown-item'>Multiplayer</a></li>
                     </ul>
-                  <li><a href=''#>By Console Type</a></li>
+                  <li class='dropdown=header'><h5>By Console Type</h5></li>
                     <ul >
-                      <li><a href='#'>Xbox</a></li>
-                      <li><a href='#'>Nitendo</a></li>
-                      <li><a href='#'>Playstation</a></li>
+                      <li><a href='index.php?console=xboxone'class='dropdown-item'>Xbox One</a></li>
+                      <li><a href='index.php?console=xbox360'class='dropdown-item'>Xbox 360</a></li>
+                      <li><a href='index.php?console=nitendo'class='dropdown-item'>Nitendo</a></li>
+                      <li><a href='index.php?console=ps4'class='dropdown-item'>PS4</a></li>
+                      <li><a href='index.php?console=ps3'class='dropdown-item'>PS3</a></li>
+
                       
                     </ul>
                 </ul>
@@ -46,9 +61,11 @@ echo "    <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
               <a class='nav-link' href='#'>About us
               </a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='/login.php'>Login
-              </a>
+            <li class='nav-item'>".
+              $loginlogout
+              ."</a>
+              <li><a href='shoppingCart.php' > My cart:  <span class='glyphicon glyphicon-shopping-cart'>$cartCount</span></a></li>
+
             </li>
           </ul>
         </div>

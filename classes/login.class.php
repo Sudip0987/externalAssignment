@@ -1,5 +1,6 @@
 <?php
 //include autoloader
+session_start();
 include('../autoloader.php');
 $page_title ="Sign In Page";
 

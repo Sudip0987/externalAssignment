@@ -50,7 +50,7 @@
                           <option value="Xbox360">Xbox 360</option>
                           <option value="PS4">PS4</option>
                           <option value="PS3">PS3</option>
-                           <option value="PS3">Other</option>
+                           <option value="Other">Other</option>
 
                           
                         </select>                   
@@ -66,7 +66,36 @@
         <?php
 include('autoloader.php');
 $prods = new Products();
-$products = $prods -> getProducts();
+$gameCat="";
+$gameConsole="";
+
+  if(isset($_POST['searchButton'])){
+  $name=$_REQUEST['textGameName'];
+  $gameConsole=$_REQUEST['selectorCcat'];
+  $gameCat = $_REQUEST['selectorGcat'];
+  $products = $prods -> searchProducts($name,$gameCat,$gameConsole);
+
+  }else{
+        if(isset($_GET['console'])){
+        $gameConsole = $_GET['console'];
+      }else {
+        $gameConsole="";
+      }
+      if(isset($_GET['game'])){
+        $gameCat = $_GET['game'];
+      }else {
+        $gameCat="";
+      }
+        $products = $prods -> getProducts($gameCat,$gameConsole);
+
+  }
+
+
+
+
+
+
+
 foreach( $products as $item ){
 $product_name = $item['name'];
 $product_Id = $item['id'];

@@ -2,6 +2,8 @@
 <!doctype html>
 
 <!DOCTYPE html>
+
+
 <html lang="en">
 
   <head>
@@ -22,39 +24,10 @@
   </head>
 
   <body>
+<?php
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">SELL MY GAME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Browse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Put an ad</a>
-            </li>
-            <li class="nav-item">
-       <a class="nav-link" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-              
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-   
+   include("./includes/header.php");
+   ?>
     <!-- Page Content -->
     <div class="container" style = " margin-top:30px;">
       
@@ -117,7 +90,8 @@
                           <option value="Xbox360">Xbox 360</option>
                           <option value="PS4">PS4</option>
                           <option value="PS3">PS3</option>
-                           <option value="PS3">Other</option></br>
+                              <option value="Nitendo">Nitendo</option>
+                           <option value="Other">Other</option></br>
 
                           
                         </select>                   

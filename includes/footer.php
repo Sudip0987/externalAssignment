@@ -1,7 +1,7 @@
 <?php
 
-echo "  <footer class='py-5 bg-dark' style= 'margin-top:100px'>
-   
+echo "  <footer class='py-2 bg-dark fixed-bottom'>
+      <div class='container'>
         <p class='m-0 text-center text-white'>Copyright &copy; Your Website 2018
         </p>
       </div>
@@ -11,7 +11,8 @@ echo "  <footer class='py-5 bg-dark' style= 'margin-top:100px'>
     <script src='vendor/jquery/jquery.min.js'>
     </script>
     <script src='vendor/bootstrap/js/bootstrap.bundle.min.js'>
-    </script>";
+    </script>
+    ";
 
 
 ?>

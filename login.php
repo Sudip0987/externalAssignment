@@ -3,7 +3,17 @@
 <html lang="en">
 
   <head>
+<?php
+session_start();
 
+if($_SESSION['userEmail']==null){
+    
+
+}else {
+    echo $_SESSION['userEmail'];
+      header("location:../publishAd.php");
+}
+?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -22,7 +32,7 @@
   <body>
     <!-- Navigation -->
     <?php
-    session_start();
+   
    include("./includes/header.php");
 
    ?>
@@ -61,9 +71,9 @@
                     <divclass='form-group'>
                     <div class="form-group">
                       <?php
-                      /*if (isset($_GET["msg1"]) && $_GET["msg1"] == 'failed') {
+                      if (isset($_GET["msg"]) && $_GET["msg"] == 'failed') {
                         echo'<p>username or password incorrect</p>';
-                      }*/
+                      }
                       if( $message ){
                 echo "<div class=\"alert alert-$message_class alert-dismissable fade show\">
                     $message

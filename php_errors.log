@@ -275,3 +275,7 @@
 [04-Oct-2018 06:25:05 UTC] PHP Stack trace:
 [04-Oct-2018 06:25:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
 [04-Oct-2018 06:25:05 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:14
+[10-Oct-2018 04:04:01 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/classes/account.class.php on line 40
+[10-Oct-2018 04:04:01 UTC] PHP Stack trace:
+[10-Oct-2018 04:04:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[10-Oct-2018 04:04:01 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:15

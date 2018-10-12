@@ -28,22 +28,26 @@ class Account extends Database {
     //login authentication
     public function authenticate($userEmail, $userPassword)
     {
-                  
+                  session_start();
 
-            $query = "SELECT userID, userName, userPassword, userEmail FROM userTable WHERE userEmail=? and userPassword=?";
+            $query = "SELECT userId, userName, userPassword, userEmail FROM userTable WHERE userEmail=? and userPassword=?";
                 $statement = $this -> connection -> prepare($query);
                            $hash = password_hash( $password, PASSWORD_DEFAULT );
         
       $statement -> bind_param('ss', $userEmail,$userPassword);
       $statement -> execute();
       $result = $statement -> get_result();
+      while( $row = $result -> fetch_assoc() ){
+       $_SESSION['userID'] = $row['userId]'];
+       
+      }
       if( $result -> num_rows == 0 ){
           
-session_start();
-            $_SESSION["userEmail"]= $userEmail;
+           
        return false;
       }
       else{
+           
      return true;
     }
             
