@@ -29,7 +29,6 @@ $page="ad";
   <body>
 <?php
 session_start();
-echo $_SESSION['userID'];
    include("./includes/header.php");
    ?>
     <!-- Page Content -->

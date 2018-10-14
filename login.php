@@ -12,7 +12,7 @@ if($_SESSION['userEmail']==null){
 
 }else {
     echo $_SESSION['userEmail'];
-      header("location:../publishAd.php");
+      header("location:../viewMyProduct.php");
 }
 ?>
     <meta charset="utf-8">

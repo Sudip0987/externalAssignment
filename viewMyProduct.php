@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php
-    if(!isset($_SESSION['userEmail'])){
-        header("location:../login.php");
-    }
-    
+  
     ?>
   <head>
     <meta charset="utf-8">
