@@ -12,22 +12,26 @@ class Account extends Database {
             //proceed and create account
             
             $query = "INSERT INTO userTable (userName,userEmail,userPassword,address, contactNo) VALUES (?, ? , ?, ?, ?)";
-            $hash = password_hash( $password, PASSWORD_DEFAULT );
+            //hash = password_hash( $password, PASSWORD_DEFAULT );
             $statement = $this -> connection -> prepare($query);
-            $statement -> bind_param('sssss', $name, $email, $hash,$address,$contactNo );
+            $statement -> bind_param('sssss', $name, $email, $password,$address,$contactNo );
             $success = $statement -> execute() ? true : false ;
             //check the error code
             if( $success == false ){
                 return $success;
             }
         else{
-            return $success;
-        }
-        
+            session_start();
+                $_SESSION['userEmail']=$email;
+                return $success;
+    }
     }
     //login authentication
     public function authenticate($userEmail, $userPassword)
     {
+        
+        
+        
                   session_start();
 
             $query = "SELECT userId, userName, userPassword, userEmail FROM userTable WHERE userEmail=? and userPassword=?";
@@ -38,16 +42,15 @@ class Account extends Database {
       $statement -> execute();
       $result = $statement -> get_result();
       while( $row = $result -> fetch_assoc() ){
-       $_SESSION['userID'] = $row['userId]'];
+       $_SESSION['userEmail']=$userEmail;
+       $_SESSION['userID']= $row['userId'];
        
       }
       if( $result -> num_rows == 0 ){
-          
-           
+
        return false;
       }
       else{
-           
      return true;
     }
             

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+<php 
+$page="index";
+?>
 <html lang="en">
   <head>
     <meta charset="utf-8">

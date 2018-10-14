@@ -3,7 +3,10 @@
 
 <!DOCTYPE html>
 
-
+<php 
+$page="ad";
+ 
+?>
 <html lang="en">
 
   <head>
@@ -25,7 +28,8 @@
 
   <body>
 <?php
-
+session_start();
+echo $_SESSION['userID'];
    include("./includes/header.php");
    ?>
     <!-- Page Content -->
@@ -120,17 +124,11 @@
    
    
     <!-- /.container -->
-
+    <?php
+        include("./includes/footer.php");
+    ?>
     <!-- Footer -->
-    <footer class="py-5 bg-dark fixed-bottom">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
   </body>
 
 </html>

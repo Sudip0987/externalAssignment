@@ -19,6 +19,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
     if( $signup == true ){
         session_start();
         $_SESSION['userEmail'] = $email;
+        echo "<script> alert('your account has been successfull registered') </script";
         header("location:../publishAd.php");
         
     }

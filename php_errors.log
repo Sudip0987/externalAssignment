@@ -279,3 +279,40 @@
 [10-Oct-2018 04:04:01 UTC] PHP Stack trace:
 [10-Oct-2018 04:04:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
 [10-Oct-2018 04:04:01 UTC] PHP   2. Account->authenticate() /home/ubuntu/workspace/classes/login.class.php:15
+[13-Oct-2018 23:34:37 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/classes/account.class.php on line 44
+[13-Oct-2018 23:34:37 UTC] PHP Stack trace:
+[13-Oct-2018 23:34:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[13-Oct-2018 23:34:37 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:14
+[13-Oct-2018 23:34:37 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:14
+[13-Oct-2018 23:45:15 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/classes/account.class.php on line 80
+[13-Oct-2018 23:45:15 UTC] PHP Stack trace:
+[13-Oct-2018 23:45:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/login.class.php:0
+[13-Oct-2018 23:45:15 UTC] PHP   2. spl_autoload_call() /home/ubuntu/workspace/classes/login.class.php:14
+[13-Oct-2018 23:45:15 UTC] PHP   3. loadClass() /home/ubuntu/workspace/classes/login.class.php:14
+[14-Oct-2018 00:02:17 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/classes/products.class.php on line 82
+[14-Oct-2018 00:02:17 UTC] PHP Stack trace:
+[14-Oct-2018 00:02:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[14-Oct-2018 00:02:17 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:30
+[14-Oct-2018 00:02:17 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/classes/products.class.php:82
+[14-Oct-2018 00:04:18 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/classes/products.class.php on line 82
+[14-Oct-2018 00:04:18 UTC] PHP Stack trace:
+[14-Oct-2018 00:04:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[14-Oct-2018 00:04:18 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:30
+[14-Oct-2018 00:04:18 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/classes/products.class.php:82
+[14-Oct-2018 00:05:55 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/classes/products.class.php on line 82
+[14-Oct-2018 00:05:55 UTC] PHP Stack trace:
+[14-Oct-2018 00:05:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[14-Oct-2018 00:05:55 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:30
+[14-Oct-2018 00:05:55 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/classes/products.class.php:82
+[14-Oct-2018 00:05:55 UTC] PHP Notice:  Undefined variable: sucess in /home/ubuntu/workspace/classes/products.class.php on line 94
+[14-Oct-2018 00:05:55 UTC] PHP Stack trace:
+[14-Oct-2018 00:05:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/publishAd.class.php:0
+[14-Oct-2018 00:05:55 UTC] PHP   2. Products->addProduct() /home/ubuntu/workspace/classes/publishAd.class.php:30
+[14-Oct-2018 03:43:10 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 91
+[14-Oct-2018 03:43:10 UTC] PHP Stack trace:
+[14-Oct-2018 03:43:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/update.class.php:0
+[14-Oct-2018 03:43:10 UTC] PHP   2. Products->updateProduct() /home/ubuntu/workspace/classes/update.class.php:31
+[14-Oct-2018 03:46:16 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/classes/products.class.php on line 91
+[14-Oct-2018 03:46:16 UTC] PHP Stack trace:
+[14-Oct-2018 03:46:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/classes/update.class.php:0
+[14-Oct-2018 03:46:16 UTC] PHP   2. Products->updateProduct() /home/ubuntu/workspace/classes/update.class.php:31

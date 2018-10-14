@@ -2,7 +2,7 @@
 <html>
   <head>
     <?php
-
+$page="";
 if($_GET['message']==1){
     echo "<script>alert('Item has been added to cart!');</script>";
 }

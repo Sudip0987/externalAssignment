@@ -19,16 +19,11 @@
 include("./includes/header.php");
 //if(isset($_SESSION['productID'])){}
     include('autoloader.php');
-echo "<br><h1 style='margin:20px;'>Your Cart <br>";
+echo "<br><h1 style='margin:20px;'>Your Ads <br>";
 
+$prods = new Products();
 
-if(count($_SESSION['productID']<=0)){
-  echo "<h4  style='margin:20px;'> Your cart is empty </h4>";
-}
-foreach($_SESSION['productID'] as $key => $id) {
-   $detail = new ProductDetail();
-
-$products = $detail -> getProduct($id);
+$products = $prods -> getUserProducts();
 foreach( $products as $item ){
 $product_name = $item['name'];
 $product_Id = $item['id'];
@@ -40,26 +35,30 @@ $image_path = $item['imagePath'];
 $delivery_info = $item['delivery'];
 $product_description =$item['description'];
 
+
 echo " </h1><div class='col-lg-4 col-md-4 col-sm-4 portfolio-item' >
 
 <div class='card h-100' style='padding:10px;'>
 <a href='#'><img class='card-img-top' height='250'  src='$image_path' alt=''></a>
 <div class='card-body'>
 <h4 class='card-title'>
-<a href='productDetails.php?product_id=$product_Id'>$product_name</a>
+<a href='editProduct.php?id=$product_Id'>$product_name</a>
 </h4>
 <b>
 <p>Price: $$product_price</p>
-<a href='deleteFromCart.php?delID=$product_Id'>Remove From Cart</a>
+<a href='editProduct.php?id=$product_Id'>Edit Product</a>
 
 
 </b>
 </div>
 </div>
+</div>
+
+</div>
 </div>";
 }
 
-}
+
 
 include("./includes/footer.php");
 ?>
