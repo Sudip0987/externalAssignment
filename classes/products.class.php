@@ -104,32 +104,7 @@ class Products extends Database{
       
         
     }
-    
-        public function addProduct($name,$price,$desc,$delivery, $console,$category,$imagePath){
-//$name,$price,$desc,$delivery, $console,$category
-        session_start();
-        
-            //proceed and create account
-             $sellerID=$_SESSION['userID'];
-
-            $query = "INSERT INTO products (name,price,description,delivery,productConsole,productCat,sellerID,imagePath) VALUES (?, ? , ?, ?, ?, ?, ?, ?)";
-            $statement = $this -> connection -> prepare($query);
-            $statement -> bind_param('ssssssss', $name,$price,$desc,$delivery, $console,$category,$sellerID,$imagePath);
-
-          //  $statement -> bind_param('sssssss', $name,$price,$desc,$delivery, $console,$category,1);
-            $success = $statement -> execute() ? true : false ;
-            echo $success;
-            //check the error code
-            if( $success == false ){
-                //check if it is email or username error
-                    $errors['email'] = 'error occured';           
-            }
-            return $sucess;
-            
-       
-      
-        
-    }
+ 
         public function addProduct($name,$price,$desc,$delivery, $console,$category,$imagePath){
 //$name,$price,$desc,$delivery, $console,$category
         session_start();
@@ -165,14 +140,20 @@ class Products extends Database{
 
           //  $statement -> bind_param('sssssss', $name,$price,$desc,$delivery, $console,$category,1);
             $success = $statement -> execute() ? true : false ;
-            echo $success;
-            //check the error code
-            if( $success == false ){
-                //check if it is email or username error
-                    $errors['error'] = 'error occured';           
-            }
-            return $sucess;
-            
+                echo "<script>alert('Product has been delete successfully!')</script>";
+
+  if( $success== true ){
+        echo "<script>alert('Product has been delete successfully!')</script>";
+        
+    }
+    elseif($success== false){
+              echo "<script>alert('Couldn't delete product)</script>";
+
+
+    }
+
+                    header("location:../viewMyProduct.php");
+
        
       
         

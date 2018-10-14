@@ -122,7 +122,7 @@ echo "<div class='container' style = ' margin-top:30px;'>
                 <button type='submit' class=' form-control btn btn-primary'>Cancel</button>
                     </div>
               </form>
-              <form action='/classes/deleteProduct.php?id=$id' method='POST'>
+              <form action='/classes/deleteP.class.php?id=$id' method='POST'>
                 <div class='form-group' style='margin-top:20px;'>
                 <button type='submit' class=' form-control btn btn-primary'>Delete Product</button>
                     </div>

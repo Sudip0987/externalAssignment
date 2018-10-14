@@ -3,20 +3,10 @@
 include('../autoloader.php');
 
 //check request method
-
+$id=$_GET['id'];
     $product = new Products();
     //add products
- $addProduct = $product -> addProduct($name,$price,$desc,$delivery, $console,$category,$imagePath);
-    if( $addProduct== true ){
-        echo "<script>alert('Product has been delete successfully!')</script>";
-        header("location:../viewMyProduct.php");
-        
-    }
-    elseif($addProduct== false){
-              echo "<script>alert('Couldn't delete product)</script>";
-
-
-    }
-
+ $deleteProduct = $product -> deleteProduct($id);
+  
 
 ?>

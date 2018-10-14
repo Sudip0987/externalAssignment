@@ -58,7 +58,7 @@ echo "    <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
             </li>
             <li class='nav-item'>
             
-              <a class='nav-link' href='#'>About us
+              <a class='nav-link' href='viewMyProduct.php'>Manage Ads
               </a>
             </li>
             <li class='nav-item'>".
