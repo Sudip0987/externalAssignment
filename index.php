@@ -42,6 +42,7 @@ $page="index";
                           <option value="Strategy">Strategy</option>
                           <option value="Adventure">Adventure</option>
                           <option value="Racing">Racing</option>
+                          <option value="Sports">Sports</option>
                           <option value="Multiplayer">Multiplayer</option>
                           <option value="Other">Other</option>
                         </select>                   
@@ -109,7 +110,7 @@ $image_path = $item['imagePath'];
 $product_description =TextUtility::summarize($item['description'],15);
 echo " <div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>
 <div class='card h-100'>
-<a href='#'><img class='card-img-top' src='$image_path' alt=''></a>
+<a href='#'><img class='card-img-top'  height='200px' src='$image_path' alt=''></a>
 <div class='card-body'>
 <h4 class='card-title'>
 <a href='productDetails.php?product_id=$product_Id'>$product_name</a>
@@ -118,7 +119,7 @@ echo " <div class='col-lg-3 col-md-4 col-sm-6 portfolio-item'>
 <p>Price: $$product_price</p>
 <p>Seller: $seller_name</p>
 </b>
-<p>Description:$product_description </p>
+<p><b>Description:</b>$product_description </p>
 </div>
 </div>
 </div>";

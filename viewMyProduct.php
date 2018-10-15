@@ -30,7 +30,7 @@ $products = $prods -> getUserProducts();
 foreach( $products as $item ){
 $product_name = $item['name'];
 $product_Id = $item['id'];
-$product_price = $item['https://shadetreeglasses.com/collections/frontpage/ladiesprice'];
+$product_price = $item['price'];
 $product_cat = $item['productCat'];
 $product_console=$item['productConsole'];
 $seller_name = $item['userName'];

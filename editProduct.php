@@ -90,6 +90,7 @@ echo "<div class='container' style = ' margin-top:30px;'>
                           <option value='Strategy'>Strategy</option>
                           <option value='Adventure'>Adventure</option>
                           <option value='Racing'>Racing</option>
+                          <option value='Sports'>Sports</option>
                           <option value='Multiplayer'>Multiplayer</option>
                           <option value='Other'>Other</option>
                         </select>   </br>                

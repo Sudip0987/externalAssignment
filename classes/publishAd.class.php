@@ -30,12 +30,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ){
  $addProduct = $product -> addProduct($name,$price,$desc,$delivery, $console,$category,$imagePath);
     if( $addProduct== true ){
         
-        header("location:../publishAd.php?sucess=true");
+        header("location:../viewMyProduct.php");
         
     }
     elseif($addProduct== false){
       
-        header("location:../publishAd.php?sucess=false");
+        header("location:../viewMyProduct.php");
        
     }
 }

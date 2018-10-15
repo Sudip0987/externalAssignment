@@ -19,7 +19,6 @@
 include("./includes/header.php");
 //if(isset($_SESSION['productID'])){}
     include('autoloader.php');
-echo "<br><h1 style='margin:20px;'>Your Cart <br>";
 
 
 if(count($_SESSION['productID']<=0)){
@@ -32,7 +31,7 @@ $products = $detail -> getProduct($id);
 foreach( $products as $item ){
 $product_name = $item['name'];
 $product_Id = $item['id'];
-$product_price = $item['https://shadetreeglasses.com/collections/frontpage/ladiesprice'];
+$product_price = $item['price'];
 $product_cat = $item['productCat'];
 $product_console=$item['productConsole'];
 $seller_name = $item['userName'];

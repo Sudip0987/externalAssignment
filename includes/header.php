@@ -58,7 +58,7 @@ echo "    <nav class='navbar navbar-expand-lg navbar-dark bg-dark fixed-top'>
             </li>
             <li class='nav-item'>
             
-              <a class='nav-link' href='viewMyProduct.php'>Manage Ads
+              <a class='nav-link'"; if(isset($_SESSION['userEmail'])){ echo" href='viewMyProduct.php'";}else{echo"href='login.php'"; } echo">Manage Ads
               </a>
             </li>
             <li class='nav-item'>".
